@@ -2478,7 +2478,6 @@ static void set_default_result(struct zinitix_touch_dev *info)
 	char delim = ':';
 	memset(info->cmd_result, 0x00, ARRAY_SIZE(info->cmd_result));
 	memcpy(info->cmd_result, info->cmd, strlen(info->cmd));
-	strncat(info->cmd_result, &delim, 1);
 }
 
 static void not_support_cmd(void *device_data)
